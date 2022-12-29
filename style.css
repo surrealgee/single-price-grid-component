@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Typography */
@@ -119,4 +120,38 @@ li {
 .btn-primary {
   color: #fff;
   background: var(--secondary-clr);
+}
+
+/* Media Queries */
+
+@media (min-width: 630px) {
+  .card-container {
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-header {
+    grid-column: 1 / -1;
+  }
+
+  .card-header-body {
+    max-width: 550px;
+  }
+
+  .col {
+    padding: 1.5em;
+  }
+
+  .offer {
+    font-size: 0.9rem;
+  }
+
+  .price-section {
+    border-bottom-left-radius: 5px;
+  }
+
+  .features-section {
+    border-bottom-left-radius: 0;
+  }
 }
